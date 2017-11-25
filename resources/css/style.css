@@ -1,0 +1,290 @@
+
+/* General Styling */
+html, body {
+  font-size: 18px;
+  font-family: Helvetica;
+  width: 70rem;
+  margin: 2rem;
+  background-color: black;
+}
+
+/* Header */
+
+header {
+
+}
+
+.logobarcontainer {
+  display: flex;
+  justify-content: left
+}
+
+.logobar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 60rem;
+  padding-left: 5rem;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+}
+
+.logobar img {
+  height: 1.5rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
+}
+
+#companyname {
+  color: #ffffff;
+}
+
+.coversection {
+  background-image: url("moto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.feature {
+  width: 25rem;
+  margin-left: 5rem;
+  background-color: black;
+  padding-top: 2rem;
+  padding-bottom:2rem;
+}
+
+#subhead {
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: .25rem;
+  padding-left: 3rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  padding-left: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav {
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+}
+
+a  {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  width: 60rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  text-decoration: none;
+  padding: .75rem; 0rem;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* Products and Details */
+
+.content {
+  width: 70rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.products, .storedetails {
+  width: 60rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3rem;
+  margin-left: 5rem;
+}
+
+.product {
+  width: 30%;
+  border: 4px solid black;
+}
+
+.product img {
+  height: 7rem;
+  padding: 2rem; 0rem;
+  align-content: center;
+}
+
+.product p {
+  background-color: black;
+  color: #ffffff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+.lochours {
+  background-color: black;
+  color: #ffffff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+.moretext {
+  width: 35%;
+}
+
+/* Footer */
+
+footer {
+  height: 5rem;
+  background-color: black;
+  color: #ffffff;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+}
+
+/* For Tablet Screens */
+
+@media only screen and (max-width: 1024px) {
+
+  html, body {
+    font-size: 12px;
+    font-family: Helvetica;
+    width: 85rem;
+    margin: 2rem;
+    background-color: black;
+  }
+
+  .logobar {
+    padding-left: 0rem;
+  }
+
+  .feature {
+    margin-left: 0rem;
+  }
+
+
+  a  {
+    text-decoration: none;
+    color: #ffffff;
+    display: none;
+  }
+
+  nav {
+    width: 60rem;
+    text-align: left;
+  }
+
+  li {
+    text-decoration: none;
+    padding: .75rem; 0rem;
+  }
+
+  .dropdown {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: .75rem 0rem;
+    text-align: left;
+
+  }
+
+  /* Products and Details */
+
+  .product {
+    width: 30%;
+    border: 4px solid black;
+  }
+
+  .products {
+    justify-content: flex-start
+  }
+
+  #outcast {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .moretext {
+    justify-content: flex-start
+  }
+
+
+  /* Footer */
+
+  footer {
+    height: 5rem;
+    background-color: black;
+    color: #ffffff;
+    padding-left: 5rem;
+    padding-top: 2.5rem;
+  }
+
+}
+
+/* For Mobile Screens */
+
+@media only screen and (max-width: 470px) {
+
+  html, body {
+    font-size: 10px;
+    font-family: Helvetica;
+    width: 47rem;
+    margin: 2rem;
+  }
+
+  .feature {
+    width: 100%;
+    margin-left: 0rem;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .coversection {
+    align-items: flex-end;
+  }
+
+  .products, .storedetails {
+    flex-direction: column;
+    padding-top: 3rem;
+    margin-left: 5rem;
+  }
+
+  .product {
+    width: 80%;
+  }
+
+  .product img {
+    width: 50%;
+    height: auto;
+  }
+
+  #outcast {
+    visibility: visible; !important;
+  }
+
+}
